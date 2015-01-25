@@ -21,7 +21,10 @@ group :development do
 end
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-gem 'cucumber'
+group :test do
+	gem 'cucumber'
+	gem 'rspec'
+end
 # Autocomplete
 gem 'rails4-autocomplete'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
