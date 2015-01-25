@@ -1,3 +1,4 @@
+# encoding: utf-8
 class Delivery < ActiveRecord::Base
   belongs_to :convention
   before_destroy :ensure_not_referenced_by_any_convention

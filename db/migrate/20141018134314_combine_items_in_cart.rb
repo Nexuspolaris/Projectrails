@@ -1,3 +1,4 @@
+# encoding: utf-8
 class CombineItemsInCart < ActiveRecord::Migration
   def self.up
   	# remplace les multiples lignes par une seule en indiquant une quantité

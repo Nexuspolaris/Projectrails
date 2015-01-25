@@ -1,3 +1,4 @@
+# encoding: utf-8
 class Product < ActiveRecord::Base
 	tailleMinTitre = 4
 	default_scope { order("titre") }

@@ -1,3 +1,4 @@
+# encoding: utf-8
 class DeliveriesController < ApplicationController
   #autocomplete :convention, :libelle, :scopes => [:conventionuser]
   autocomplete :convention, :libelle
