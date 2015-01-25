@@ -43,6 +43,7 @@
               <li><%= link_to image_tag("auth_logo/google_32.png",size: "32x32")+" - Connexion avec Google", user_omniauth_authorize_path(:open_id, :openid_url => "https://www.google.com/accounts/o8/id") %></li>
             </ul>
             <%= render "devise/sessions/new" %>
+            <%= link_to("s''enregistrer", new_user_registration_path ) %>
             <% end %>
           </div>
       </div>

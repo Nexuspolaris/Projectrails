@@ -23,6 +23,7 @@ module ApplicationHelper
     else
       #lien se connecter
       link_to('Connexion',controller: "user", action: "sign_in")
+
     end
   end
   def link_to_remove_fields(name, f)
