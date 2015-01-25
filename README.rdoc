@@ -1,3 +1,4 @@
+{<img src="https://circleci.com/gh/Nexuspolaris/Projectrails.svg?style=svg" alt="Circle CI" />}[https://circleci.com/gh/Nexuspolaris/Projectrails]
 == README
 
 This README would normally document whatever steps are necessary to get the
