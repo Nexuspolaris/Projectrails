@@ -52,8 +52,8 @@ database:
 ## Customize test commands
 test:
   override:
-    - mkdir -p $CIRCLE_TEST_REPORTS/cucumber
-    - bundle exec cucumber --format json --out $CIRCLE_TEST_REPORTS/cucumber/tests.cucumber
+    - mkdir -p test/cucumber
+    - bundle exec cucumber --format json --out test/cucumber/tests.cucumber
 
 ## Customize deployment commands
 deployment:
