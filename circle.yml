@@ -52,7 +52,7 @@ database:
 ## Customize test commands
 test:
   override:
-    - phpunit test/unit-tests # use PHPunit for testing
+    #- phpunit test/unit-tests # use PHPunit for testing
   post:
     - bundle exec rake jasmine:ci: # add an extra test type
         environment:
@@ -70,4 +70,4 @@ deployment:
 notify:
   webhooks:
     # A list of hashes representing hooks. Only the url field is supported.
-    - url: https://someurl.com/hooks/circle
+    #- url: https://someurl.com/hooks/circle
