@@ -23,7 +23,8 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: projectrails_production
+  host: ec2-54-247-87-217.eu-west-1.compute.amazonaws.com
+  database: d41dp5cu0sb37t
   pool: 5
-  username: renaud
-  password: frontier
+  username: ztrksbjzkjfiyj
+  password: aGlThnVdC4w8I3BSBNEmOTs3bL
