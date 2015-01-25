@@ -1,0 +1,97 @@
+#topBar {
+	background: #0a4d0a;
+  padding-bottom: 2px;
+	font: small-caps large "Times New roman",serif;
+	color: #282;
+	text-align: center;
+}
+/*#page {padding:0px;margin:0px;overflow:hidden;}*/
+#header{width:980px;height:15px;margin:0px auto;background-color:#474444;position:relative;z-index:1000;}
+#topBar{height:29px;background-color:#141;border-bottom:1px solid #979494;color:#EEEEEE;font-size:13px;clear:both;}
+#topBar a{color:#EEEEEE;}
+
+#topBarEspacePerso, #topBarTitre{line-height:31px;padding:0;margin:0}
+#topBarEspacePerso,#topCurrentLocale, #topBarTitre{float:left;}
+#topBarEspacePerso,#topCurrentLocale, #topBarTitre {margin-left:33px;margin-right:66px;}
+#topBarEspacePerso a,#topCurrentLocale a{text-decoration:none;}
+#topCurrentLocale{line-height:10px;padding:0;margin:0}
+
+#topBarEspacePerso:hover > #topBarAccount {display:block;}
+#topCurrentLocale:hover > #topChangeLocale {display:block;}
+#topBarAccount {width:275px;position:absolute;margin:0 0 0 0;display:none;z-index:1000;background-color:#141;border-right:1px solid #979494;border-left:1px solid #979494;border-bottom:1px solid #979494;padding-bottom:10px;font-size:small;text-align: left;}
+#topChangeLocale {width:150px;position:absolute;margin:0 0 0 0;display:none;z-index:1000;background-color:#141;border-right:1px solid #979494;border-left:1px solid #979494;border-bottom:1px solid #979494;padding-bottom:10px;font-size:small;text-align: left;}
+#topBarAccount form,#topChangeLocale form {margin:0;padding:0;}
+#accountLogin,#accountPassword,#accountButton {height:27px;line-height:25px;}
+#accountLogin,#accountPassword,#accountLogin,#accountPassword {width:180px;margin:13px 0 0 28px;border-radius:5px 5px 5px 5px;padding:0 20px 0 20px;outline:0;}
+#accountButton {margin:16px 0 16px 28px;font-size:12px;font-weight:bold;color:#FFFFFF;text-shadow:1px 1px 1px #000000;background-color:#E95A21;border:none;}
+#topBarAccount hr,#topChangeLocale hr {margin:0px auto;border-top:1px solid #979494;}
+#accountButton,#topBarAccount hr,#topChangeLocale hr ,ul.accountLink{width:220px;}
+
+#banner img {
+	float: left;
+}
+
+#columns {
+  clear:both;
+  width:980px;
+  margin:0px auto;
+  padding:0;
+  background-color:#eee;
+  z-index:500;
+}
+
+#main {
+	
+	padding-top:1ex;
+  margin:0; 
+  float:left;
+}
+#main p, h1 {
+  padding-left:10px;
+  padding-right:10px;
+}
+#footer{
+  clear:both;
+  float:left;
+  padding:0;
+  margin:0 auto;
+  width:100%;
+  text-align:center;
+  background: #000;
+  color: #fff;
+}
+#side{
+	padding-top: 1em;
+	padding-left: 1em;
+	padding-bottom: 1em;
+  margin:0;
+  background-color:#141;
+  float:left;
+  height:300px;
+  width:17%;
+}
+
+#side a {
+	color: #bfb;
+	font-size: small;
+}
+
+#store .entry form, #store .entry form div {
+	display: inline;
+}
+
+#notice {
+	border-color: #f00;
+	border-width: 2px;
+}
+
+#store .cart_title {
+	font: 120% bold;
+}
+#store .item_price, #store .total_line {
+	text-align: right;
+}
+#store .total_line .total_cell {
+	font-weight: bold;
+	border-top: 1px solid #595; 
+}

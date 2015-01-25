@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+rubyone:
+  titre: test
+  description: MyText
+  image_url: image.jpg
+  price: 4
+
+one:
+  titre: Test2
+  description: MyText
+  image_url: MyString.png
+  price: 2
+
+rail:
+  titre: Programming Ruby 1.9
+  description: Ruby est un langage permettant un développement rapide et moderne. Il est fortement orienté Agile.
+  price: 49.5
+  image_url: ruby.png

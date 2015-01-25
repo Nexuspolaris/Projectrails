@@ -1,0 +1,28 @@
+<%= form_for(@delivery) do |f| %>
+<% if @delivery.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@delivery.errors.count, "error") %> prohibited this product from being saved:</h2>
+
+      <ul>
+        <% @delivery.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :libelle %><br>
+    <%= f.text_field :libelle %>
+  </div>
+  <div class="field">
+    <%= f.label :convention_id %><br>
+    <%= f.autocomplete_field :convention_id, autocomplete_convention_libelle_deliveries_path,:id_element => '#convention_id' %>
+  </div>
+  <div class="hidden">
+    <%= f.hidden_field :convention_id, :id => "convention_id" %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,9 @@
+<table border=0><tr><td>Titre de convention :</td><td><%= @convention.libelle %></td></tr>
+  <tr><td>Crée le :</td><td><%= I18n.localize(@convention.created_at, :format => :short) %></td></tr>
+  <tr><td>Modifié le :</td><td><%= I18n.localize(@convention.updated_at, :format => :short) %></td></tr>
+</table>
+<table style="border: solid 1px;" ><tr><th>Deliveries</th></tr>
+<% @convention.delivery.each do |delivery| %>
+<tr><td><%= delivery.libelle %></td></tr>
+<% end %>
+</table>

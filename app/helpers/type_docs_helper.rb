@@ -1,0 +1,2 @@
+module TypeDocsHelper
+end

@@ -1,0 +1,15 @@
+<h1>Nouveau Contrat</h1>
+
+<%= simple_form_for @convention do |f| %>
+  <%= f.input :libelle, label_html: { class: 'my_class' } %>
+<table>
+  <tr>
+    <th>Deliveries</th>
+  </tr>
+  <%= f.fields_for :delivery do |builder| %>
+    <%= render "delivery_fields", :f => builder %>
+  <% end %>
+</table>
+<p><%= link_to_add_fields "Ajouter un delivery", f, :deliveries %></p>
+  <%= f.button :submit %>
+<% end %>

@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+<div class="cart_title"> .:Votre panier:.</div>
+<table>
+<ul>
+<% for item in @cart.line_items %>
+  <tr>
+	<td><%= item.quantity %></td><td> <%= item.product.titre %></td><td class="item_price"><%= number_to_currency(item.montant_ttc) %></td>
+  </tr>
+<% end %>
+<tr class="total_ligne">
+<td colspan="2">Total</td>
+<td class="total_cell"><%= number_to_currency(@cart.total_ttc) %></td>
+</tr>
+</table>
+<%= button_to 'Vider le panier', @cart, :method => :delete, :confirm => "Etes-vous sur ?" %>
+<%= link_to 'Edit', edit_cart_path(@cart) %> |
+<%= link_to 'Back', carts_path %>

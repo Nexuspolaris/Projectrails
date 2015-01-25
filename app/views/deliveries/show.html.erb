@@ -1,0 +1,5 @@
+<table border=0><tr><td>Titre de delivery :</td><td><%= @delivery.libelle %></td></tr>
+  <tr><td>convention id :</td><td><%= Convention.find(@delivery.convention_id).libelle %></td></tr>
+  <tr><td>Crée le :</td><td><%= I18n.localize(@delivery.created_at, :format => :short) %></td></tr>
+  <tr><td>Modifié le :</td><td><%= I18n.localize(@delivery.updated_at, :format => :short) %></td></tr>
+</table>
